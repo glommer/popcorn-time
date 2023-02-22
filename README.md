@@ -13,17 +13,19 @@ pnpm install --filter ./apps/server && pnpm install --filter ./apps/client
 
 The server is an express app.
 
-Serve by running.
+Set up the `apps/server/.env` file with the environment variables needed (there is an example in `apps/server/.sample.env`),
+then serve by running:
 
 ```sh
-pnpm --filter ./apps/client dev
+pnpm --filter ./apps/server dev
 ```
 
 ## Client - `./apps/client`
 
 The front-end client is a Vue.js app.
 
-Serve by running.
+Set up the `apps/client/.env` file with the environment variables needed (there is an example in `apps/client/.sample.env`),
+then serve by running:
 
 ```sh
 pnpm --filter ./apps/client dev
