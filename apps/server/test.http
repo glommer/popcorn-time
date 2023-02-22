@@ -1,0 +1,38 @@
+### Init (Create movies table)
+curl "http://localhost:3000/init" \
+  -X POST \
+
+### Seed (Seed some data)
+curl "http://localhost:3000/seed" \
+-X POST \
+
+### Fetch all movies
+curl "http://localhost:3000/movies" \
+
+### Add movie using IMDB movie id
+curl "http://localhost:3000/add" \
+-X POST \
+-H "Accept: application/json" \
+-H "Content-Type: application/json" \
+-d '{
+      "imdbId": "tt17494686"
+    }'
+
+### Search for movies
+curl "http://localhost:3000/search" \
+-X POST \
+-H "Accept: application/json" \
+-H "Content-Type: application/json" \
+-d '{
+      "query": "Avatar"
+    }'
+
+### Update movie
+curl "http://localhost:3000/update" \
+-X POST \
+-H "Accept: application/json" \
+-H "Content-Type: application/json" \
+-d '{
+      "movieId": 1,
+      "watched": true
+    }'

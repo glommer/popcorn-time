@@ -1,0 +1,9 @@
+{
+  "name": "popcorn-time",
+  "version": "1.0.0",
+  "description": "A favourites movie listing app built with express, libSQL, and Vue.js",
+  "main": "apps/server/index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

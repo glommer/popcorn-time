@@ -1,0 +1,29 @@
+{
+  "name": "popcorn-time",
+  "version": "1.0.0",
+  "description": "An express server using libSQL for data storage",
+  "main": "./apps/server/index.js",
+  "scripts": {
+    "serve": "nodemon index.js",
+    "format": "prettier --write '*.js' '**/*.js'",
+    "dev": "concurrently \"pnpm format\" \"pnpm serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.0.5",
+    "add": "^2.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4"
+  }
+}
